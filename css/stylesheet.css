@@ -41,7 +41,7 @@ h6 {
 
 /* Map */
 .map {
-    height: 30rem;
+    height: 20rem;
 }
 
 @media (max-width: 992px) {
@@ -101,105 +101,11 @@ h6 {
 
 @media (min-width: 992px) {
     .masthead {
-        height: 100vh;
+        height: 90vh;
     }
     .masthead h1 {
         font-size: 5.5rem;
     }
-}
-
-/* Side Menu */
-#sidebar-wrapper {
-    position: fixed;
-    z-index: 2;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    transform: translateX(250px);
-    background: #1D809F;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li.sidebar-nav-item a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 15px;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    font-size: 1.2rem;
-    background: rgba(52, 58, 64, 0.1);
-    height: 80px;
-    line-height: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #fff;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.menu-toggle {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    color: #fff;
-    background: rgba(52, 58, 64, 0.5);
-    line-height: 50px;
-    z-index: 999;
-}
-
-.menu-toggle:focus, .menu-toggle:hover {
-    color: #fff;
-}
-
-.menu-toggle:hover {
-    background: #343a40;
 }
 
 .service-icon {
@@ -339,36 +245,43 @@ input[type=submit]:hover {
     }
 }
 
+
 /* Contact */
-.contact {
-    padding: 5px;
+.contact-me {
+    height: 100vh;
 }
 
 /* Flags */
 
-.flags {
-    background: none !important;
-    height: 50px !important;
-    width: 50px !important;
+.flags img {
+    width: 40px;
+    height: 40px;
 }
 
-.flags:hover {
-    background: none !important;
-    height: 50px !important;
-    width: 50px !important;
+.overlay {
+    position: relative;
 }
 
-.flags-en:hover {
-    content: url("../flags/flag_united_kingdom_hover.png")
+.overlay:after {
+    position: absolute;
+    content:"";
+    top:-8px;
+    left:0px;
+    width:100%;
+    height:40px;;
+    opacity:0;
+    border-radius: 50%;
+    transition: all .3s linear;
 }
 
-.flags-no:hover {
-    content: url("../flags/flag_norway_hover.png")
+.overlay:hover:after  {
+    opacity: .5;
 }
 
-.flags-ru:hover {
-    content: url("../flags/flag_russia_hover.png")
+.black:after {
+    background-color: black;
 }
+
 
 /* Phone and mail links */
 
@@ -382,4 +295,62 @@ input[type=submit]:hover {
 
 #skills .skill-row {
     padding: 20px;
+}
+
+.skills {
+    height: 100vh;
+}
+
+/* About */
+
+#about img{
+    max-height: 500px !important;
+}
+
+#about {
+    height: 100vh;
+}
+
+/* Nav */
+.affix {
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: orange;
+    position: fixed !important;
+    z-index: 9999 !important;
+    opacity: 0.7;
+}
+
+.affix .nav-link {
+    padding: 0.5rem !important;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.affix-top .nav-link{
+    padding: 1rem !important;
+}
+
+.affix-top {
+    position: absolute !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 200px;
+}
+
+
+
+#nav-button {
+    display: none;
+}
+
+/* Home */
+
+.home {
+    height: 100vh;
 }
