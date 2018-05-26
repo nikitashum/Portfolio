@@ -158,7 +158,7 @@
                     </small>
                 </div>
                 <div class='col-md-5 form'>
-                    <form action="/send_message.php">
+                    <form action="/">
                         <label for="fname">Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">   
                         <label for="subject">Message</label>

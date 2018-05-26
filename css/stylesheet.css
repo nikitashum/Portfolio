@@ -279,6 +279,7 @@ input[type=submit]:hover {
     position: absolute !important;
     width: 100% !important;
     z-index: 9999 !important;
+    
 }
 
 .affix + .container-fluid {
@@ -306,7 +307,7 @@ input[type=submit]:hover {
     }
 
     .affix-top .nav-link{
-        padding: 5px !important;
+        padding: 0.2rem !important;
     }
     .affix-top ul {
         display: -webkit-inline-box;
@@ -327,6 +328,8 @@ input[type=submit]:hover {
 }
 
 
+
+
 /* Contact */
 
 .contact-me {
@@ -340,9 +343,10 @@ input[type=submit]:hover {
     }
 }
 
-@media (min-width: 992px) {
-    .contact-me {
-        height: 100vh;
+
+@media screen and (min-height: 700px) {
+    .contact-me{
+        height: auto;
     }
 }
 
@@ -392,10 +396,11 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-height: 700px) {
     .skills {
-        height: 100vh;
-    }}
+        height: auto;
+    }
+}
 
 /* About */
 
@@ -404,10 +409,12 @@ input[type=submit]:hover {
     height: auto;
 }
 
-@media (min-width: 992px) {
+
+@media screen and (min-height: 700px) {
     #about {
-        height: 100vh;
-    }}
+        height: auto;
+    }
+}
 
 
 /* Home */

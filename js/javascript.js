@@ -60,19 +60,6 @@
         document.getElementById("h1").innerHTML = newText;
     }
 
-    $("#toggler").click(function () {
-        if ($(window).scrollTop() >= 1) {
-            if ($('#nav').css('opacity') == 1) {
-                document.getElementById('nav').style.opacity = 0.7;
-            } else {
-                document.getElementById('nav').style.opacity = 1;
-            }
-        }
-    });
-
-
-
-    $('#nav li:has(ul)').doubleTapToGo();
 
 })(jQuery); // End of use strict
 
