@@ -27,8 +27,8 @@
 
     <body id="page-top">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" data-spy="affix" data-offset-top="1">
-            <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="1" role="navigation">
+            <button id="toggler" class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
@@ -45,30 +45,25 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
-                    <li class="dropdown show">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Languages
-                        </a>
-
-                        <div class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuLink">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="flags overlay black dropdown-item" href='?ln=en'>
-                                        <img class="flags-en" src="flags/flag_united_kingdom.png">
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="flags overlay black dropdown-item" href="?ln=no">
-                                        <img class="flags-no" src="flags/flag_norway.png">
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="flags overlay black dropdown-item" href="?ln=ru">
-                                        <img class="flags-ru" src="flags/flag_russia.png">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <li class="nav-item">
+                        <a class="dropdown nav-link" aria-haspopup="true" href="#/">Languages</a>
+                        <ul>
+                            <li>
+                                <a class="flags overlay black" href='?ln=en'>
+                                    <img class="flags-en" src="flags/flag_united_kingdom.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flags overlay black" href="?ln=no">
+                                    <img class="flags-no" src="flags/flag_norway.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flags overlay black" href="?ln=ru">
+                                    <img class="flags-ru" src="flags/flag_russia.png">
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -84,7 +79,6 @@
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More about me</a>
             </div>
         </header>
-    </div>
     <!-- About -->
     <section class="content-section bg-light" id="about">
         <div class="container text-center">

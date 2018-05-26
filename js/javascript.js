@@ -34,33 +34,45 @@
 
     var randNum = Math.floor(Math.random() * 5 + 1);
     var newText = "";
-    
+
     if (randNum == 1) {
         newText = "Make internet great again!";
         document.getElementById("h1").innerHTML = newText;
     }
-    
+
     if (randNum == 2) {
         newText = "Websites for everyone!";
         document.getElementById("h1").innerHTML = newText;
     }
-    
+
     if (randNum == 3) {
         newText = "Create the web!";
         document.getElementById("h1").innerHTML = newText;
     }
-    
+
     if (randNum == 4) {
         newText = "The web is your sandbox!";
         document.getElementById("h1").innerHTML = newText;
     }
-    
+
     if (randNum == 5) {
         newText = "Websites. Done right.";
         document.getElementById("h1").innerHTML = newText;
     }
 
+    $("#toggler").click(function () {
+        if ($(window).scrollTop() >= 1) {
+            if ($('#nav').css('opacity') == 1) {
+                document.getElementById('nav').style.opacity = 0.7;
+            } else {
+                document.getElementById('nav').style.opacity = 1;
+            }
+        }
+    });
 
+
+
+    $('#nav li:has(ul)').doubleTapToGo();
 
 })(jQuery); // End of use strict
 
