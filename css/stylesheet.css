@@ -2,6 +2,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -101,7 +102,7 @@ h6 {
 
 @media (min-width: 992px) {
     .masthead {
-        height: 90vh;
+        height: 100vh;
     }
     .masthead h1 {
         font-size: 5.5rem;
@@ -243,12 +244,102 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
+
+}
+
+/* Nav */
+
+
+.affix {
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: orange;
+    position: fixed !important;
+    z-index: 9999 !important;
+    opacity: 0.7;
+}
+
+.affix .nav-link {
+    padding: 0.5rem !important;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.affix-top .nav-link{
+    top: 100px;
+}
+
+.affix-top {
+    position: absolute !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 200px;
+}
+
+
+
+#nav-button {
+    display: none;
+}
+
+
+@media screen and (max-width: 990px) {
+    
+    .affix .nav-link{
+        padding: 0.2rem !important;
+    }
+    
+    .affix ul {
+        
+        display: -webkit-inline-box;
+        display: -moz-inline-box;
+        display: -ms-inline-box;
+    }
+
+    .affix-top .nav-link{
+        padding: 5px !important;
+    }
+    .affix-top ul {
+        display: -webkit-inline-box;
+        display: -moz-inline-box;
+        display: -ms-inline-box;
+    }
+
+    .affix-top {
+        width: 100% !important;
+        z-index: 9999 !important;
+    }
+
+    .affix + .container-fluid {
+        padding-top: 200px; 
+    }
+
+
 }
 
 
 /* Contact */
+
 .contact-me {
-    height: 100vh;
+    margin: auto;
+}
+@media screen and (max-width: 991px) {
+    .form {
+        width: 100% !important;
+        margin: 0 !important;
+        padding-top: 15px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-me {
+        height: 100vh;
+    }
 }
 
 /* Flags */
@@ -265,10 +356,10 @@ input[type=submit]:hover {
 .overlay:after {
     position: absolute;
     content:"";
-    top:-8px;
-    left:0px;
-    width:100%;
-    height:40px;;
+    top:2px;
+    left:2px;
+    width:35px;
+    height:35px;;
     opacity:0;
     border-radius: 50%;
     transition: all .3s linear;
@@ -297,60 +388,40 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-.skills {
-    height: 100vh;
-}
+@media (min-width: 992px) {
+    .skills {
+        height: 100vh;
+    }}
 
 /* About */
 
 #about img{
     max-height: 500px !important;
+    height: auto;
 }
 
-#about {
-    height: 100vh;
-}
+@media (min-width: 992px) {
+    #about {
+        height: 100vh;
+    }}
 
-/* Nav */
-.affix {
-    top: 0;
-    width: 100%;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    background-color: orange;
-    position: fixed !important;
-    z-index: 9999 !important;
-    opacity: 0.7;
-}
-
-.affix .nav-link {
-    padding: 0.5rem !important;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.affix-top .nav-link{
-    padding: 1rem !important;
-}
-
-.affix-top {
-    position: absolute !important;
-    width: 100% !important;
-    z-index: 9999 !important;
-}
-
-.affix + .container-fluid {
-    padding-top: 200px;
-}
-
-
-
-#nav-button {
-    display: none;
-}
 
 /* Home */
 
 .home {
     height: 100vh;
+}
+
+
+/* Drop down menu */
+
+.dropdown-menu a, .dropdown-menu img {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-custom {
+    padding: 0 !important;
 }
