@@ -32,34 +32,90 @@
         }
     });
 
+
     var randNum = Math.floor(Math.random() * 5 + 1);
     var newText = "";
 
-    if (randNum == 1) {
-        newText = "Make internet great again!";
-        document.getElementById("h1").innerHTML = newText;
-    }
+    if (document.documentElement.lang === "en") {
+        if (randNum == 1) {
+            newText = "Make internet great again!";
+            document.getElementById("h1").innerHTML = newText;
+        }
 
-    if (randNum == 2) {
-        newText = "Websites for everyone!";
-        document.getElementById("h1").innerHTML = newText;
-    }
+        if (randNum == 2) {
+            newText = "Websites for everyone!";
+            document.getElementById("h1").innerHTML = newText;
+        }
 
-    if (randNum == 3) {
-        newText = "Create the web!";
-        document.getElementById("h1").innerHTML = newText;
-    }
+        if (randNum == 3) {
+            newText = "Create the web!";
+            document.getElementById("h1").innerHTML = newText;
+        }
 
-    if (randNum == 4) {
-        newText = "The web is your sandbox!";
-        document.getElementById("h1").innerHTML = newText;
-    }
+        if (randNum == 4) {
+            newText = "The web is your sandbox!";
+            document.getElementById("h1").innerHTML = newText;
+        }
 
-    if (randNum == 5) {
-        newText = "Websites. Done right.";
-        document.getElementById("h1").innerHTML = newText;
+        if (randNum == 5) {
+            newText = "Websites. Done right.";
+            document.getElementById("h1").innerHTML = newText;
+        }
     }
+    
+        if (document.documentElement.lang === "no") {
+        if (randNum == 1) {
+            newText = "Gjør internett flott igjen!";
+            document.getElementById("h1").innerHTML = newText;
+        }
 
+        if (randNum == 2) {
+            newText = "Nettsteder for alle!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 3) {
+            newText = "Opprett nettsted!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 4) {
+            newText = "Internett er din sandkasse!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 5) {
+            newText = "Nettsteder. Gjørt rett.";
+            document.getElementById("h1").innerHTML = newText;
+        }
+    }
+    
+        if (document.documentElement.lang === "ru") {
+        if (randNum == 1) {
+            newText = "Сделайте Интернет великолепным!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 2) {
+            newText = "Веб-сайты для всех!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 3) {
+            newText = "Создать веб-сайт!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 4) {
+            newText = "Интернет - это ваша песочница!";
+            document.getElementById("h1").innerHTML = newText;
+        }
+
+        if (randNum == 5) {
+            newText = "Веб-сайты. Сделаны правильно.";
+            document.getElementById("h1").innerHTML = newText;
+        }
+    }
 
 })(jQuery); // End of use strict
 

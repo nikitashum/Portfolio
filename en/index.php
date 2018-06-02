@@ -71,148 +71,178 @@
 
         <!-- Header -->
         <header class="masthead d-flex">
-            <div class="container text-center my-auto">
+            <div class="container text-center my-auto home">
                 <h1 class="mb-1" id="h1"></h1>
-                <h3 class="mb-5">
-                    I am a Student and a freelance Web Developer
+                <h3 class="mb-5" id="h3">
+                    Student engineer and a freelance developer
                 </h3>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More about me</a>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about"><i class="icon-arrow-down"></i></a>
             </div>
         </header>
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <img src="img/hello.png" class="rounded img-fluid d-block" alt="Me in a cartoonish style">
-                    <label>Nikita Sumahers</label>
-                    <p class="lead mb-5">I am currently studying Computer Engineering at NTNU, the Norwegian University of Science and Technology and I have an Advanced craft certificate in ICT Service Operations. I am passionate about programming and developing. Therefore i wish to dedicate my time to those things. Currently I am located in Norway, Ålesund.</p>
-                    <a class="btn btn-dark btn-xl js-scroll-trigger" href="#skills">What Can I Offer</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="content-section bg-primary text-white text-center skills" id="skills">
-        <div class="container">
-            <div class="content-section-heading">
-                <h3 class="text-secondary mb-0">Skills</h3>
-                <h2 class="mb-5">What Can I Offer</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 skill-row">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-pencil"></i>
-                    </span>
-                    <h4>
-                        <strong>Redesigned</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Web and software developing. HTML/PHP/CSS/JavaScript and Java applications!</p>
-                </div>
-                <div class="col-lg-6 skill-row">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-screen-smartphone"></i>
-                    </span>
-                    <h4>
-                        <strong>Responsive</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Responsive web design will allow your site to look great on any device!</p>
-                </div>
-            </div>
-            <br>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#contact">Contact</a>
-        </div>
-    </section>
-
-    <!-- Callout -->
-    <div class="contact-me">
-        <section class="callout"  id="contact">
+        <!-- About -->
+        <section class="content-section bg-light" id="about">
             <div class="container text-center">
-                <h2 class="mx-auto mb-5">Hire <em>Me</em></h2>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <span class="mx-auto mb-3">
-                            <i class="icon-phone"></i>
-                        </span>
-                        <a class="link" href="tel:+4746237765">+47-4623-7765</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <span class="mx-auto mb-3">
-                            <i class="icon-envelope"></i>
-                        </span>
-                        <a class="link" href="mailto:nsumahers@gmail.com?Subject=Sent from my portfolio site" target="_top">nsumahers@gmail.com</a>
+                    <div class="col-lg-10 mx-auto">
+
+                        <label>About me</label>
+                        <p class="lead mb-4">My name is Nikita. I am currently studying Computer Engineering at NTNU, the Norwegian University of Science and Technology. I am also own the Advanced craft certificate in ICT Service Operations.</p>
+                        <p class="lead mb-4">I am passionate about technology and programming. I wish to make a career in this sphere one day. I have experience in programming webistes, robots, applications and writing scripts.</p>
+                        <p class="lead mb-4">I have experience in working with many languages like:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item lead">HTML</li>
+                            <li class="list-inline-item lead">CSS</li>
+                            <li class="list-inline-item lead">PHP</li>
+                            <li class="list-inline-item lead">JavaScript</li>
+                            <li class="list-inline-item lead">Java</li>
+                            <li class="list-inline-item lead">MySQL</li>
+                            <li class="list-inline-item lead">AngularJS</li>
+                            <li class="list-inline-item lead">JQuery</li>
+                        </ul>
+                        <p class="lead mb-4">and a few more, I also have experience in setting up both Windows and Linux servers. I am about to be a Full Stack Developer.</p>
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#skills"><i class="icon-arrow-down"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Map -->
-        <section class="map">
-            <div class="row contact">
-                <div class='col-md-7'>
-                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236207.0550622712!2d6.343469512513542!3d62.45021262869383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1527273996331"></iframe>
-                    <br/>
-                    <small>
-                        <a href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236207.0550622712!2d6.343469512513542!3d62.45021262869383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1527273996331"></a>
-                    </small>
-                </div>
-                <div class='col-md-5 form'>
-                    <form action="/">
-                        <label for="fname">Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">   
-                        <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer text-center">
+        <!-- Skills -->
+        <section class="content-section bg-secondary text-white text-center skills" id="skills">
             <div class="container">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/nikita.sumahers" target="_blank">
-                            <i class="icon-social-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="www.linkedin.com/in/nsumahers" target="_blank">
-                            <i class="icon-social-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/nikitashum" target="_blank">
-                            <i class="icon-social-github"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Nikita Sumahers 2018</p>
+                <div class="content-section-heading">
+                    <h2 class="mb-5">My skills</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 skill-row">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-badge"></i>
+                        </span>
+                        <h4>
+                            <strong>Many languages!</strong>
+                        </h4>
+                        <p class="text-faded mb-0">I can not only speak English, Norwegian and Russian, but I can also programm on many different languages and platforms!</p>
+                    </div>
+                    <div class="col-lg-6 skill-row">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-screen-smartphone"></i>
+                        </span>
+                        <h4>
+                            <strong>Responsive design!</strong>
+                        </h4>
+                        <p class="text-faded mb-0">Responsive design on the web is very important today. I have experience working with responsive design and can make your site look good on any platform!</p>
+                    </div>
+                    <div class="col-lg-6 skill-row">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-wrench"></i>
+                        </span>
+                        <h4>
+                            <strong>Problem solving</strong>
+                        </h4>
+                        <p class="text-faded mb-0">I am an engineern therefore I love to solve problems! I can find a solution to your software and hardware problems!</p>
+                    </div>
+                    <div class="col-lg-6 skill-row">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-book-open"></i>
+                        </span>
+                        <h4>
+                            <strong>Teaching myself</strong>
+                        </h4>
+                        <p class="text-faded mb-0">Software development is constantly changing. Therefore I am constantly updating my knowledge online! I am good at teaching myself and can quickly learn something new.</p>
+                    </div>
+                </div>
+                <br>
+                <a class="btn btn-light btn-xl js-scroll-trigger text-dark" href="#contact"><i class="icon-arrow-down"></i></a>
             </div>
-        </footer>
-    </div>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-        <i class="fa fa-angle-up"></i>
-    </a>
+        </section>
 
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <!-- Callout -->
+        <div class="contact-me">
+            <section class="callout"  id="contact">
+                <div class="container text-center">
+                    <h2 class="mx-auto mb-5">Contact <em>Me</em></h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <span class="mx-auto mb-3 service-icon">
+                                <i class="icon-phone"></i>
+                            </span>
+                            <a class="link" href="tel:+4746237765">+47-4623-7765</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="mx-auto mb-3 service-icon">
+                                <i class="icon-envelope"></i>
+                            </span>
+                            <a class="link" href="mailto:nsumahers@gmail.com?Subject=Sent from my portfolio site" target="_top">nsumahers@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="style-two">
+            <!-- Map -->
+            <section class="map">
+                <div class="row contact">
+                    <div class='col-md-7'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236207.0550622712!2d6.343469512513542!3d62.45021262869383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1527273996331"></iframe>
+                        <br/>
+                        <small>
+                            <a href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236207.0550622712!2d6.343469512513542!3d62.45021262869383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1527273996331"></a>
+                        </small>
+                    </div>
+                    <div class='col-md-5 form'>
+                        <form action="./send_mail.php">
+                            <label for="firstname">Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Your name..">   
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                            <input type="hidden" id="language" name="language" value="en">
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+            <!-- Footer -->
+            <footer class="footer text-center">
+                <div class="container">
+                    <ul class="list-inline mb-5">
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/nikita.sumahers" target="_blank">
+                                <i class="icon-social-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white mr-3" href="www.linkedin.com/in/nsumahers" target="_blank">
+                                <i class="icon-social-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white" href="https://github.com/nikitashum" target="_blank">
+                                <i class="icon-social-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text-muted small mb-0">Copyright &copy; Nikita Sumahers 2018</p>
+                </div>
+            </footer>
+        </div>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/affix/affix.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 
-    <!-- Custom scripts -->
-    <script src="js/javascript.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
 
-</body>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/affix/affix.js"></script>
+
+        <!-- Custom scripts -->
+        <script src="js/javascript.js"></script>
+
+    </body>
 
 </html>
-
